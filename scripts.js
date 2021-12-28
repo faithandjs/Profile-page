@@ -1,9 +1,3 @@
-//document.querySelector('.tooltip').style
-    //document.querySelector('.portfolio').style.backgroundColor = 'black'
-    //document.querySelector('.white-div')
-    //document.querySelector('.name').style
-    //document.querySelector('.title')
-
 
 document.querySelector('.portfolio').style.backgroundColor = 'white'
 document.querySelector('.mode-box').addEventListener('mouseover', function(){
@@ -34,9 +28,8 @@ document.querySelector('.mode-box').addEventListener("click", function(){
         document.querySelectorAll('.subheading').forEach(function(item){
             item.style.color = 'rgb(233, 232, 232)'
         })
-        document.querySelector('.tooltip').textContent = 'Light mode?'
-        document.querySelector('.mode').style.color = 'white'
-        document.querySelector('.mode').textContent = 'Light'
+        //document.querySelector('.mode').style.color = 'white'
+        document.querySelector('.mode img').src = 'sun (1).png'
 
     }else
     if( document.querySelector('.portfolio').style.backgroundColor == 'black' ){
@@ -54,8 +47,7 @@ document.querySelector('.mode-box').addEventListener("click", function(){
         document.querySelectorAll('.subheading').forEach(function(item){
             item.style.color = 'rgb(27, 27, 27)'
         })
-        document.querySelector('.tooltip').textContent = 'Dark mode?'
-        document.querySelector('.mode').style.color = 'black'
-        document.querySelector('.mode').textContent = 'Dark'
+        //document.querySelector('.mode').style.color = 'black'
+        document.querySelector('.mode img').src = 'moon.png'
     }
 });
